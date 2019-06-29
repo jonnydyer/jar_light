@@ -1,0 +1,9 @@
+- Mounting screws
+- Do voltage sense according to AN2447
+- Move in-line current sense resistors to top
+- Move current sense ADC measurements away from ADC0/AREF as it prevents using internal 1.1V ref.  Add analog decoupling to AREF/AVCC
+- Move battery JST connector so as not to interfere with MCU part
+- ISP port with SMT pads for spring header
+- Move button to a GPIO instead of RESET or add second button
+- Rotate USB connector 90 deg to allow different mounting options
+- Flip switch sides

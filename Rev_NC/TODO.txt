@@ -1,0 +1,16 @@
+- Move ISP connector
+- Fix RESET near QFN
+- RESET pullup is on VCC instead of +BATT
+- Decoupling caps for AVR
+- RC filter for current sense
+- Ground vias below QFN & attach pad to GND
+- Mounting screws
+- Enable voltage sense with FET instead of AVR pin
+- Status LED on AVR
+- Inset and/or centered JST connector
+- Center USB connector?
+- JST polarity backwards
+- Low ESR bypass cap near FAN3100
+- Move Zener outside current sense resistor
+- Current sense resistor in-line with boost input for efficiency calc
+- 
