@@ -1,5 +1,37 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:diode
+LIBS:switches
+LIBS:jar_light-cache
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -16,7 +48,7 @@ $EndDescr
 Text Notes 9150 1200 0    60   ~ 0
 Requirements:\n- Li-Ion charger and SoC monitoring\n- Boost converter for LED filament\n- Touch interface to control\n- Li-Ion battery\n- USB port for programming and charging
 $Comp
-L jar_light-rescue:LTC4054-4.2 U1
+L LTC4054-4.2 U1
 U 1 1 592D00F3
 P 1750 4000
 F 0 "U1" H 1950 4300 60  0000 C CNN
@@ -28,7 +60,7 @@ F 4 "LTC4054LES5-4.2#TRMPBF" H 1750 4000 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:USB_OTG J1
+L USB_OTG J1
 U 1 1 592D0164
 P 3000 2000
 F 0 "J1" H 2800 2450 50  0000 L CNN
@@ -40,7 +72,7 @@ F 4 "1050170001" H 3000 2000 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:Si3476DV Q1
+L Si3476DV Q1
 U 1 1 59379ACD
 P 9000 4900
 F 0 "Q1" H 8700 5100 50  0000 L CNN
@@ -52,7 +84,7 @@ F 4 "SI3476DV-T1-GE3" H 9000 4900 60  0001 C CNN "manf#"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:L L1
+L L L1
 U 1 1 59379B7B
 P 8700 3750
 F 0 "L1" V 8650 3750 50  0000 C CNN
@@ -64,7 +96,7 @@ F 4 "ETQ-P4M470YFN" V 8700 3750 60  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L jar_light-rescue:D_Schottky D1
+L D_Schottky D1
 U 1 1 59379BF5
 P 9200 3750
 F 0 "D1" H 9200 3850 50  0000 C CNN
@@ -76,7 +108,7 @@ F 4 "BAT46ZFILM" H 9200 3750 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L jar_light-rescue:C C2
+L C C2
 U 1 1 59379C6E
 P 8400 3900
 F 0 "C2" H 8425 4000 50  0000 L CNN
@@ -88,7 +120,7 @@ F 4 "GRM31CD80J107ME39L" H 8400 3900 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:C C3
+L C C3
 U 1 1 59379CB5
 P 9600 3900
 F 0 "C3" H 9625 4000 50  0000 L CNN
@@ -100,7 +132,7 @@ F 4 "CL31B105KCHNNNE" H 9600 3900 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:GND #PWR01
+L GND #PWR01
 U 1 1 59379FAD
 P 9000 5250
 F 0 "#PWR01" H 9000 5000 50  0001 C CNN
@@ -111,7 +143,7 @@ F 3 "" H 9000 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:GND #PWR02
+L GND #PWR02
 U 1 1 5937A117
 P 9750 4450
 F 0 "#PWR02" H 9750 4200 50  0001 C CNN
@@ -122,7 +154,7 @@ F 3 "" H 9750 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:GND #PWR03
+L GND #PWR03
 U 1 1 5937A17C
 P 8400 4150
 F 0 "#PWR03" H 8400 3900 50  0001 C CNN
@@ -133,7 +165,7 @@ F 3 "" H 8400 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:+BATT #PWR04
+L +BATT #PWR04
 U 1 1 5937A324
 P 8000 3650
 F 0 "#PWR04" H 8000 3500 50  0001 C CNN
@@ -144,7 +176,7 @@ F 3 "" H 8000 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:GND #PWR05
+L GND #PWR05
 U 1 1 5937A52B
 P 8000 5450
 F 0 "#PWR05" H 8000 5200 50  0001 C CNN
@@ -155,7 +187,7 @@ F 3 "" H 8000 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:+BATT #PWR06
+L +BATT #PWR06
 U 1 1 5937A640
 P 2350 3850
 F 0 "#PWR06" H 2350 3700 50  0001 C CNN
@@ -166,7 +198,7 @@ F 3 "" H 2350 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:GND #PWR07
+L GND #PWR07
 U 1 1 5937A68B
 P 3000 2500
 F 0 "#PWR07" H 3000 2250 50  0001 C CNN
@@ -177,7 +209,7 @@ F 3 "" H 3000 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:GND #PWR08
+L GND #PWR08
 U 1 1 5937AA09
 P 2350 4500
 F 0 "#PWR08" H 2350 4250 50  0001 C CNN
@@ -188,7 +220,7 @@ F 3 "" H 2350 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:C C1
+L C C1
 U 1 1 5937AB5E
 P 2000 3300
 F 0 "C1" H 2025 3400 50  0000 L CNN
@@ -200,7 +232,7 @@ F 4 "JMK107BJ105KK-T" H 2000 3300 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:GND #PWR09
+L GND #PWR09
 U 1 1 5937AC1B
 P 2000 3550
 F 0 "#PWR09" H 2000 3300 50  0001 C CNN
@@ -211,7 +243,7 @@ F 3 "" H 2000 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:VCC #PWR010
+L VCC #PWR010
 U 1 1 5937AD79
 P 1750 3050
 F 0 "#PWR010" H 1750 2900 50  0001 C CNN
@@ -222,7 +254,7 @@ F 3 "" H 1750 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:VCC #PWR011
+L VCC #PWR011
 U 1 1 5937ADB7
 P 3400 1700
 F 0 "#PWR011" H 3400 1550 50  0001 C CNN
@@ -233,7 +265,7 @@ F 3 "" H 3400 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:R R1
+L R R1
 U 1 1 5937AEFD
 P 1150 4250
 F 0 "R1" V 1230 4250 50  0000 C CNN
@@ -245,7 +277,7 @@ F 4 "RC0603JR-072KL" V 1150 4250 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:ATTINY84A-MMH U2
+L ATTINY84A-MMH U2
 U 1 1 5937B195
 P 4850 4350
 F 0 "U2" H 4000 5100 50  0000 C CNN
@@ -261,7 +293,7 @@ D+
 Text Label 3500 2100 0    60   ~ 0
 D-
 $Comp
-L jar_light-rescue:R R3
+L R R3
 U 1 1 5937B422
 P 6150 4850
 F 0 "R3" V 6200 4700 50  0000 C CNN
@@ -273,7 +305,7 @@ F 4 "RC0603JR-0768RL" V 6150 4850 60  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L jar_light-rescue:R R5
+L R R5
 U 1 1 5937B6B0
 P 6600 4550
 F 0 "R5" V 6700 4600 50  0000 C CNN
@@ -285,7 +317,7 @@ F 4 "RC0603JR-072K2L" V 6600 4550 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:VCC #PWR012
+L VCC #PWR012
 U 1 1 5937B7C1
 P 6600 4300
 F 0 "#PWR012" H 6600 4150 50  0001 C CNN
@@ -300,7 +332,7 @@ D-
 Text Label 6700 4850 0    60   ~ 0
 D+
 $Comp
-L jar_light-rescue:R R4
+L R R4
 U 1 1 5937B963
 P 6150 4950
 F 0 "R4" V 6200 4800 50  0000 C CNN
@@ -312,7 +344,7 @@ F 4 "RC0603JR-0710KL" V 6150 4950 60  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L jar_light-rescue:R R8
+L R R8
 U 1 1 5937BD71
 P 9950 4100
 F 0 "R8" V 10000 3950 50  0000 C CNN
@@ -332,7 +364,7 @@ Text Label 6050 4650 0    60   ~ 0
 Text Label 1150 3900 0    60   ~ 0
 ~CHRG
 $Comp
-L jar_light-rescue:CONN_02X03 J2
+L CONN_02X03 J2
 U 1 1 5937D5A9
 P 4950 3000
 F 0 "J2" H 4950 3200 50  0000 C CNN
@@ -344,7 +376,7 @@ F 4 "GRPB032VWVN-RC" H 4950 3000 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:GND #PWR013
+L GND #PWR013
 U 1 1 5938CE27
 P 5300 3450
 F 0 "#PWR013" H 5300 3200 50  0001 C CNN
@@ -355,7 +387,7 @@ F 3 "" H 5300 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:+BATT #PWR014
+L +BATT #PWR014
 U 1 1 5938CF77
 P 3700 3550
 F 0 "#PWR014" H 3700 3400 50  0001 C CNN
@@ -366,7 +398,7 @@ F 3 "" H 3700 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:+BATT #PWR015
+L +BATT #PWR015
 U 1 1 5938CFBE
 P 5300 2850
 F 0 "#PWR015" H 5300 2700 50  0001 C CNN
@@ -391,7 +423,7 @@ MISO
 Text Label 5900 4350 0    60   ~ 0
 MOSI
 $Comp
-L jar_light-rescue:CONN_01X02 J4
+L CONN_01X02 J4
 U 1 1 593E2239
 P 3000 4250
 F 0 "J4" H 3000 4400 50  0000 C CNN
@@ -403,7 +435,7 @@ F 4 "S2B-PH-SM4-TB" H 3000 4250 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:CONN_01X01 J6
+L CONN_01X01 J6
 U 1 1 593E2ED8
 P 10700 3750
 F 0 "J6" H 10800 3750 50  0000 C CNN
@@ -414,7 +446,7 @@ F 3 "" H 10700 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:CONN_01X01 J7
+L CONN_01X01 J7
 U 1 1 593E2F3D
 P 10700 3900
 F 0 "J7" H 10800 3900 50  0000 C CNN
@@ -429,7 +461,7 @@ LEDPAD+
 Text Label 10000 3900 0    60   ~ 0
 LEDPAD-
 $Comp
-L jar_light-rescue:LED D2
+L LED D2
 U 1 1 593F675E
 P 900 3750
 F 0 "D2" H 900 3850 50  0000 C CNN
@@ -441,7 +473,7 @@ F 4 "VLMO1300-GS08" H 900 3750 60  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L jar_light-rescue:R R9
+L R R9
 U 1 1 593F685D
 P 900 3400
 F 0 "R9" V 980 3400 50  0000 C CNN
@@ -453,7 +485,7 @@ F 4 "RC0603JR-07220RL" V 900 3400 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:D_Zener D3
+L D_Zener D3
 U 1 1 593F7004
 P 10450 4150
 F 0 "D3" H 10450 4250 50  0000 C CNN
@@ -465,7 +497,7 @@ F 4 "MMSZ5267BT1G" H 10450 4150 60  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L jar_light-rescue:R R2
+L R R2
 U 1 1 5937B38D
 P 6150 4750
 F 0 "R2" V 6200 4600 50  0000 C CNN
@@ -477,7 +509,7 @@ F 4 "RC0603JR-0768RL" V 6150 4750 60  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L jar_light-rescue:R R12
+L R R12
 U 1 1 5961C331
 P 8200 3750
 F 0 "R12" V 8300 3800 50  0000 C CNN
@@ -489,7 +521,7 @@ F 4 "ERJ-3LWFR010V" V 8200 3750 60  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L jar_light-rescue:C C4
+L C C4
 U 1 1 5961C90B
 P 3700 4000
 F 0 "C4" H 3725 4100 50  0000 L CNN
@@ -501,7 +533,7 @@ F 4 "JMK107BJ105KK-T" H 3700 4000 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:ZXGD3005E6 U3
+L ZXGD3005E6 U3
 U 1 1 5961E7E2
 P 8000 4850
 F 0 "U3" H 7800 5200 60  0000 C CNN
@@ -513,7 +545,7 @@ F 4 "ZXGD3005E6TA" H 8000 4850 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:R R11
+L R R11
 U 1 1 5961EBA2
 P 7350 4850
 F 0 "R11" V 7450 4750 50  0000 C CNN
@@ -527,7 +559,7 @@ $EndComp
 Text Label 7050 4850 0    60   ~ 0
 PWM
 $Comp
-L jar_light-rescue:C C5
+L C C5
 U 1 1 5961F53D
 P 7550 4400
 F 0 "C5" H 7575 4500 50  0000 L CNN
@@ -539,7 +571,7 @@ F 4 "JMK107BJ105KK-T" H 7550 4400 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:GND #PWR016
+L GND #PWR016
 U 1 1 5961F6EB
 P 7550 4600
 F 0 "#PWR016" H 7550 4350 50  0001 C CNN
@@ -550,7 +582,7 @@ F 3 "" H 7550 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:+BATT #PWR017
+L +BATT #PWR017
 U 1 1 5961F83C
 P 6400 4400
 F 0 "#PWR017" H 6400 4250 50  0001 C CNN
@@ -561,7 +593,7 @@ F 3 "" H 6400 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:SW_Push SW1
+L SW_Push SW1
 U 1 1 5961FD37
 P 4950 3400
 F 0 "SW1" H 5000 3500 50  0000 L CNN
@@ -573,7 +605,7 @@ F 4 "KMR231NG LFS" H 4950 3400 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:LED D4
+L LED D4
 U 1 1 5962052E
 P 6800 3850
 F 0 "D4" H 6800 3950 50  0000 C CNN
@@ -585,7 +617,7 @@ F 4 "VLMG1300-GS08" H 6800 3850 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L jar_light-rescue:R R10
+L R R10
 U 1 1 596206AD
 P 6400 3850
 F 0 "R10" V 6480 3850 50  0000 C CNN
@@ -597,7 +629,7 @@ F 4 "RC0603JR-07220RL" V 6400 3850 60  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L jar_light-rescue:GND #PWR018
+L GND #PWR018
 U 1 1 59620899
 P 7200 4200
 F 0 "#PWR018" H 7200 3950 50  0001 C CNN
@@ -608,7 +640,7 @@ F 3 "" H 7200 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jar_light-rescue:R R14
+L R R14
 U 1 1 59670CBB
 P 9550 3450
 F 0 "R14" V 9650 3350 50  0000 C CNN
@@ -620,7 +652,7 @@ F 4 "RC0603JR-0710KL" V 9550 3450 60  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L jar_light-rescue:R R13
+L R R13
 U 1 1 59670D5D
 P 9550 3300
 F 0 "R13" V 9650 3200 50  0000 C CNN
@@ -632,7 +664,7 @@ F 4 "RC0603JR-0710KL" V 9550 3300 60  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L jar_light-rescue:C C6
+L C C6
 U 1 1 596711CD
 P 6450 3600
 F 0 "C6" H 6475 3700 50  0000 L CNN
@@ -644,7 +676,7 @@ F 4 "JMK107BJ105KK-T" H 6450 3600 60  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L jar_light-rescue:C C7
+L C C7
 U 1 1 59DAD4BF
 P 5900 3550
 F 0 "C7" H 5925 3650 50  0000 L CNN
@@ -656,9 +688,10 @@ F 4 "CC0603ZRY5V9BB104" H 5900 3550 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 3750 8950 4500
+	8950 3750 8950 4550
 Wire Wire Line
-	8850 4500 8950 4500
+	8850 4500 9150 4500
+Connection ~ 8850 4500
 Wire Wire Line
 	9050 4500 9050 4550
 Connection ~ 8950 4500
@@ -666,9 +699,9 @@ Wire Wire Line
 	9150 4500 9150 4550
 Connection ~ 9050 4500
 Wire Wire Line
-	8850 3750 8950 3750
+	8850 3750 9050 3750
 Wire Wire Line
-	9350 3750 9600 3750
+	9350 3750 10500 3750
 Wire Wire Line
 	9000 5150 9000 5250
 Wire Wire Line
@@ -676,19 +709,19 @@ Wire Wire Line
 Wire Wire Line
 	9600 4050 9600 4350
 Wire Wire Line
-	8000 3650 8000 3750
+	8000 3650 8000 4350
 Connection ~ 8000 3750
 Wire Wire Line
-	2200 4000 2350 4000
+	2200 4000 2800 4000
 Wire Wire Line
-	1150 4450 1750 4450
+	1150 4450 2700 4450
 Wire Wire Line
 	8850 4550 8850 4500
 Connection ~ 8950 3750
 Wire Wire Line
 	3700 5400 8000 5400
 Wire Wire Line
-	3000 2400 3000 2450
+	3000 2400 3000 2500
 Wire Wire Line
 	2900 2400 2900 2450
 Wire Wire Line
@@ -697,9 +730,9 @@ Connection ~ 3000 2450
 Wire Wire Line
 	2000 3450 2000 3550
 Wire Wire Line
-	1750 3050 1750 3150
+	1750 3050 1750 3550
 Wire Wire Line
-	900  3150 1750 3150
+	900  3150 2000 3150
 Wire Wire Line
 	3300 1800 3400 1800
 Wire Wire Line
@@ -719,7 +752,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 4850 6000 4850
 Wire Wire Line
-	6300 4750 6600 4750
+	6300 4750 6700 4750
 Wire Wire Line
 	6300 4850 6700 4850
 Wire Wire Line
@@ -728,22 +761,22 @@ Connection ~ 6600 4750
 Wire Wire Line
 	3800 3750 3700 3750
 Wire Wire Line
-	3700 3550 3700 3750
+	3700 3550 3700 3850
 Wire Wire Line
 	6600 4300 6600 4400
 Wire Wire Line
-	5900 4950 5950 4950
+	5900 4950 6000 4950
 Wire Wire Line
-	9950 4350 9750 4350
+	9950 4350 9600 4350
 Wire Wire Line
 	9750 4450 9750 4350
 Connection ~ 9750 4350
 Wire Wire Line
-	9950 4250 9950 4300
+	9950 4250 9950 4350
 Wire Wire Line
-	9950 3300 9950 3900
+	9950 3300 9950 3950
 Wire Wire Line
-	9850 4300 9950 4300
+	9850 4300 10450 4300
 Wire Wire Line
 	9850 4300 9850 3450
 Connection ~ 9950 4300
@@ -755,7 +788,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 3100 5300 3100
 Wire Wire Line
-	5300 3100 5300 3400
+	5300 3100 5300 3450
 Wire Wire Line
 	5200 2900 5300 2900
 Wire Wire Line
@@ -767,7 +800,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 3000 4400 3000
 Wire Wire Line
-	4400 3100 4650 3100
+	4400 3100 4700 3100
 Wire Wire Line
 	5950 4950 5950 5100
 Wire Wire Line
@@ -798,21 +831,21 @@ Wire Wire Line
 Wire Wire Line
 	8000 3750 8050 3750
 Wire Wire Line
-	8350 3750 8400 3750
+	8350 3750 8550 3750
 Connection ~ 8400 3750
 Connection ~ 3700 3750
 Wire Wire Line
-	3700 4150 3700 4950
+	3700 4150 3700 5400
 Wire Wire Line
 	3800 4950 3700 4950
 Connection ~ 3700 4950
 Wire Wire Line
-	8000 5350 8000 5400
+	8000 5350 8000 5450
 Connection ~ 8000 5400
 Wire Wire Line
 	8450 4800 8550 4800
 Wire Wire Line
-	8550 4800 8550 4850
+	8550 4800 8550 4900
 Wire Wire Line
 	8550 4850 8650 4850
 Wire Wire Line
@@ -832,7 +865,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 4950 6400 4400
 Wire Wire Line
-	5150 3400 5300 3400
+	5150 3400 5900 3400
 Connection ~ 5300 3400
 Wire Wire Line
 	4750 3400 4650 3400
@@ -850,7 +883,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 3450 6650 3450
 Wire Wire Line
-	6650 3450 6650 3600
+	6650 3450 6650 3750
 Wire Wire Line
 	6250 3850 6250 4050
 Wire Wire Line
@@ -865,7 +898,7 @@ Wire Wire Line
 	6200 3750 6650 3750
 Connection ~ 6650 3600
 Wire Wire Line
-	6150 3300 6150 3600
+	6150 3300 6150 3850
 Wire Wire Line
 	6150 3850 5900 3850
 Wire Wire Line
@@ -876,9 +909,9 @@ Wire Wire Line
 Text Label 5900 4150 0    60   ~ 0
 SCK
 Wire Wire Line
-	7200 3850 7200 4100
+	7200 3850 7200 4200
 $Comp
-L jar_light-rescue:SW_Push SW2
+L SW_Push SW2
 U 1 1 59DD9C9E
 P 6850 4100
 F 0 "SW2" H 6900 4200 50  0000 L CNN
@@ -902,66 +935,4 @@ Wire Wire Line
 Connection ~ 7200 4100
 Text Notes 8500 3600 0    60   ~ 0
 Alt: SRP7050TA-470M
-Wire Wire Line
-	8950 4500 8950 4550
-Wire Wire Line
-	8950 4500 9050 4500
-Wire Wire Line
-	9050 4500 9150 4500
-Wire Wire Line
-	8000 3750 8000 4250
-Wire Wire Line
-	8950 3750 9050 3750
-Wire Wire Line
-	3000 2450 3000 2500
-Wire Wire Line
-	1750 3150 1750 3550
-Wire Wire Line
-	1750 3150 2000 3150
-Wire Wire Line
-	1750 4450 2350 4450
-Wire Wire Line
-	6600 4750 6700 4750
-Wire Wire Line
-	9750 4350 9600 4350
-Wire Wire Line
-	9950 4300 9950 4350
-Wire Wire Line
-	9950 4300 10450 4300
-Wire Wire Line
-	9600 3750 10450 3750
-Wire Wire Line
-	5950 4950 6000 4950
-Wire Wire Line
-	2350 4450 2700 4450
-Wire Wire Line
-	2350 4000 2800 4000
-Wire Wire Line
-	9950 3900 9950 3950
-Wire Wire Line
-	10450 3750 10500 3750
-Wire Wire Line
-	8400 3750 8550 3750
-Wire Wire Line
-	3700 3750 3700 3850
-Wire Wire Line
-	3700 4950 3700 5400
-Wire Wire Line
-	8000 5400 8000 5450
-Wire Wire Line
-	8550 4850 8550 4900
-Wire Wire Line
-	8000 4250 8000 4350
-Wire Wire Line
-	5300 3400 5300 3450
-Wire Wire Line
-	5300 3400 5900 3400
-Wire Wire Line
-	4650 3100 4700 3100
-Wire Wire Line
-	6650 3600 6650 3750
-Wire Wire Line
-	6150 3600 6150 3850
-Wire Wire Line
-	7200 4100 7200 4200
 $EndSCHEMATC
