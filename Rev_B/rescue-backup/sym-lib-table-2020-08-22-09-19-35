@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name jar_light-rescue)(type Legacy)(uri ${KIPRJMOD}/jar_light-rescue.lib)(options "")(descr ""))
+)
