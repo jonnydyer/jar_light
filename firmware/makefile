@@ -15,7 +15,7 @@ SRC = $(TRG).c
 
 # AVRLIB defines
 AVRLIB_SRC = swTimer.c timerx8.c
-AVRLIB = /Users/$(USER)/Documents/avrlib/
+AVRLIB = /Users/$(USER)/Documents/dev/avrlib/
 
 # V-USB defines
 VUSBLIB = usbdrv/

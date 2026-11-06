@@ -1,3 +1,5 @@
+NOTE - FINAL STUFFED BOARDS APPEAR TO HAVE ISSUE WITH DIODE PLACEMENT BEING FLIPPED.
+
 - Mounting screws
 - Do voltage sense according to AN2447
 - Move in-line current sense resistors to top
